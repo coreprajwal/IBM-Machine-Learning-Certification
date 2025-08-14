@@ -39,6 +39,7 @@
 - entropy shows how impurity is there in a particular node
 - information gain is opposite of entropy
 - information gain also helps to know how imoortant is a certain independent variable
+  
 ## How decision tree learn
 - first a feature is selected based on information gain and set as root node
 - the root node gets split into categories of that particular node
@@ -62,3 +63,58 @@
 - then we calculate weighted mse and iterate same for every feature
 - the least weighted mse feature with threshold is selected for the split and the data is splited
 - variance is checked after each split and for further splitting same process of selecting feature and then calculating mse and weighted mse is done untill we get split of low variance for higher accuracy
+
+
+## Describe Support vector machine
+- Support vector machine is a supervised learning model, that is used for classification and regression problems
+- It classifies binary classes into with a linear line
+- for 2 dimensional plane it classifies data points with a plane and for higher dimensions it uses hyperplane to classify
+- when datapoints in a dimension are not linearly separable we can increase the dimensionality with increase in kernel
+- It also has margins , which defines how hard or soft the classification is done
+
+
+## Python tools for SVM
+- sklearns uses kernel that has different types such as linear (Default), polynomial etc
+
+## SVM Applications
+- Image classification
+- handwritting recognition
+- spam detection
+
+## Explain KNN
+- K-Nearest Neighbour is an supervised machine learning algorithm
+-
+
+## Describe how K-NN Algorithm works
+ it uses labeled dataset to point every dataset in multi-dimensional to learn
+- it calculates point for the query parameters, and then calculates distance from query point to the nearest neighbours, sorts them in the ascending order and and top k neighbours is selected
+- then majority voting is done, for the class and majority class is selected, for the regression problem average of nearest neighbours is taken.
+
+
+## How k affects outcome of k-NN algorithm
+- if k are less, it causes overfitting
+- if k are too high, it causes underfitting
+- k should be ideal (neither low nor high)
+
+## Impact of bias and variance on accuracy and precision
+- low bias --> almost at target
+- high bias --> away from target
+- low variance --> all instance predictions are close
+- high variance --> all instance predictions are away from each other
+
+- accuracy --> bias
+- precision --> variance
+
+## Bias variance trade-off in model complexity
+- low complexity model --> high bias and Low variance (linear regression)
+- High complexity model --> low bias and high variance (Decision Tree)
+- We need our model to be at a sweet spot, Mid--
+  
+## Evaluate techniques to mitigate bias and variance
+- Bagging and boosting are mainly--
+- bagging - uses strong learner with high variance and average out results
+- boosting - uses weak but cautious learners with low bias and we iterate on mistakes
+
+## outcomes of bagging and boosting
+- bagging reduces high variance
+- boosting reduces low bias
