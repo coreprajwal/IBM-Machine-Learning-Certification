@@ -23,4 +23,35 @@
 - it is also shown with dendrogram
 
 
+## Describe K-means clustering
+- k means clustering is a clustering where k numbers of clusters are created from the whole clusters
+- separate cohesive groups are creative 
+
+## explain how k-means algorithm works
+- at first k centroids are selected from dataset or positions are selected
+- then iteratively distance between two points is data point and centroid is calculated
+- cluster with minimum distance is assigned to the data point and mean of the is taken
+- the mean now becomes the centroid, and this whole process happens iterative until the centroids position gets stable.
+
+
+## how to determine k
+there are three ways to determine k
+- silhoutte Analysis - 
+- Elbow Method
+- Daivis-Bouldin Method
+
+
+## Describe DBSCAN and how it works
+- DBSCAN takes parameters like epsilon(radius) , N (no. of points),Minimum point and creates clusters based on the these parameters
+- if numbers of points are within epsilon and more than N --> core points
+- If number of points are within epsilon but less than N --> border points
+- If points are not within epsilon --> Noise
+
+## Describe HDBSCAN and how it works
+- HDBSCAN doesn't require parameters like dbscan
+- it is also efficient for finding noise points
+- it merges two radius as one to create clusters
+- it first find small clusters and then form relation or connection making thi agglomerative method
+
+
 ## 💡 
