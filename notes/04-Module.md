@@ -54,4 +54,28 @@ there are three ways to determine k
 - it first find small clusters and then form relation or connection making thi agglomerative method
 
 
-## 💡 
+## Describe how clustering, Dimensionality reduction and feature engineering used to improve performance model
+- clustering help find collinear features , and hence taking only improves efficiency
+- dimensionality reduction is only taking orthonormal vectors as they represent whole dataset and predicts the result with less no. of features but highly accurate
+- feature engineering is removing features that are collinear to itself and also not much collinear to target varible hence removing it increases efficiency
+
+## How dimensionality reduction used to simplify data structure and improve outcomes
+- dimensionality reduction basically is taking orthonormal vectors from all the vectors and using it to predict output (svm face recognition)
+
+## How clustering can be used for feature selection
+- clustering is used to identify which features are collinear with each other and hence only choosing one from all highly collinear set of feature for model training and remove redundants
+
+
+## Dimension reduction algorithms 
+- Dimensionality reduction is the process of removing redundant and less collinear features with target variable
+
+## Different types of dimension reduction algorithms (PCA,T-SNE,UMAP)
+- Principle Component Analysis(PCA):-
+- It assumes features to be linearly correlated and hence collinearity and therefore it creates the set of component where all features are non-collinear
+
+- t-distributed stochastic neighbour embedding (T-SNE):-
+- here it maintains the similarity between two points from high dimensions and plots it on the lower dimensional space
+
+- Uniform Manifold Approximation and Projection (UMAP) :-
+- here it represent non-linear relatonship between points on lower dimension space based on manifold theory
+
