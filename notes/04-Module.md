@@ -78,4 +78,3 @@ there are three ways to determine k
 
 - Uniform Manifold Approximation and Projection (UMAP) :-
 - here it represent non-linear relatonship between points on lower dimension space based on manifold theory
-
