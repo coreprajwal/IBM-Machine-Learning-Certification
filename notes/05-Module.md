@@ -81,3 +81,47 @@ r2 variance= unexplained variance / total variance
   PCA (Explained Variance Ratio,Reconstruction error (how original data can be reconstructed ))
   t-SNE
   UMAP
+
+## Define Model Validation
+- Model validation is a splitting of training data into folds and each models prediction is tested on each fold to get accuracy, this reduces the chances of overfitting model on single dataset.
+
+## Explain data snooping and how to avoid it
+Data snooping is when you change or modify data or model after peeking the accuracy for one particular test data set and keep modifying until it gives good accuracy for that particular test data resulting overfitting and less generalisability
+
+## Discuss key strategies for model validation
+strategies are cross validation, k -folds of data set and 
+stratified cross validation
+
+
+## Define regularization for linear regression
+- Regularization is a technique to reduce overfitting, and prevent model to learn the noise of data
+
+
+
+## Compare linear , ridge and lasso regression methods
+- ridge regression add a lamda and penalty value to the mean squared error which penalizes the error by squaring the coefficients of each variable, this allows to not let one feature dominate on others and have equal importance
+
+- lasso regression helps to do feature engineerin as it adds mod of each coefficient of variable with lambda to the mse and thus small correlation values get zero and thus not included , therefore the feature engineering
+
+## Define Data Leakage
+- Data leakage is when you information from test leaks into your model
+- it can happen if features created are based on whole dataset and not only training set
+- also happens we provide future data such as accuracy to model and retrain model and test on same test data.
+- you weren't carefull while performing train test split, cross validation, and test set
+
+## How to mitigate data leakage
+- be carefull with data engineering, don't create feature that leaks future test data info into iteself
+- do proper separation while of train test split, cross validation, and test set validation
+
+## Feature importance interpretation and other modeling pitfalls
+- In feature importance we only non reduntant features
+- Ensure training features are available for real-world deployment
+- if two features doesn't directly help in performance in a model ,suppose linear regression then we might remove those features but the same two features would become important in case of other models such as random forest as random forest can identify the interaction between those two features which could explain the target label, hence be carefull with that
+
+
+- Modelling pitfalls
+- Selecting inappropriate features
+- Interpretating wrong evaluation metrics
+- ignoring class imbalance
+- Blind reliance on automation
+- Performing "what-if" scenario based on non-causal data
